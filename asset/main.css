@@ -1,0 +1,149 @@
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 10px;
+    line-height: normal;
+    } 
+
+body{
+    background: linear-gradient(180deg, #B068E9 0%, #6463E7 100%);
+    min-height: 100vh;
+}
+ 
+ .container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 86.5%;
+    max-width: 360px;
+    border-radius: 2.3rem;
+    background-color: #FFF;
+    box-shadow: 0px 50px 50px -20px rgba(53, 18, 122, 0.50);
+    gap:2.8rem;
+    height:100%;
+}
+ .images-mobile{
+    margin-top: -107px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+ }
+
+
+.ilustrtion-woman-mobile{
+    width: 237px;
+
+}  
+
+.shadow-mobile{
+    margin-top: -20%;
+} 
+
+.text-content{
+    padding-bottom:4.8rem;
+    flex-direction: column;
+}
+
+h1{
+    color: #1E1F36;
+    font-size: 3.2rem;
+    font-weight: 700;
+    padding-bottom:2rem;
+}
+
+dl{
+    width: 279px;
+    cursor: pointer;
+}
+
+dt {
+    color: #4B4C5F;
+    font-size: 1.3rem;
+    font-weight: 400;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1.8rem;
+    padding-bottom: 1.8rem;
+  }
+  
+  .qna-box{
+    border-bottom: 1px solid #E8E8EA;
+  }
+
+  .answer{
+    display:none;
+    color: #787887;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px; 
+    padding-bottom: 1.6rem;
+    
+  }
+
+
+  dt.expanded .arrow-icon{
+    transform: rotate(180deg);
+}
+ 
+ @media (min-width: 1440px) {
+    .ilustrtion-woman-mobile, .shadow-mobile{
+        display: none;
+    }
+
+     main{
+        max-width:925px;
+        height: 509px;
+        display: flex;
+        justify-content: flex-end;
+        background: 
+           url('../asset/images/bg-pattern-desktop.svg') no-repeat top -294px left -576px,
+           url('../asset/images/illustration-woman-online-desktop.svg') no-repeat top 70.81px left -83.86px;
+        background-color: #FFF;
+        position: relative;
+
+    }
+    main::before {
+        content: "";
+        background-image: url('../asset/images/illustration-box-desktop.svg');
+        background-repeat: no-repeat;
+        width: 140px;
+        height: 190px;
+        position: absolute;
+        top: 60%;
+        left:-1.5%;
+        transform: translate(-55%, -55%);
+      }
+
+    .text-content{
+     
+        padding-right: 9.5rem;
+        align-items: flex-start;
+    }  
+
+    dl{
+        width: 35rem;
+    }
+
+    dt{
+        font-size: 1.4rem;
+    }
+
+    dt:hover {
+        color: #F47B56;
+      }
+}   
